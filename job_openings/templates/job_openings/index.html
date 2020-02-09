@@ -1,0 +1,360 @@
+{% extends "job_openings/basics.html" %}
+{% block body %}
+{% for form in form %}
+     {{ form }}
+    {% endfor %}
+    <!-- banner -->
+
+rrr
+
+
+	<div class="baneer-w3ls">
+		<div class="row no-gutters">
+			<div class="col-xl-5 col-lg-6 ">
+				<div class="banner-left-w3">
+					<div class="container">
+						<div class="banner-info_agile_w3ls ">
+							<h5>The Ministry of Labour </h5>
+							<h3 class="text-da mb-4"><span>Student </span> Mera <p class="font-weight-bold"><h3>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "  Student Maera Naam", " I am Creative.", " I Love Design.", " I Love to Develop." ]'>
+
+  </a>
+                            </h3>
+                            </h3>
+                            </p>
+                            <p>Sed ut perspiciatis Dev Raj Singh natus error sit voluptatem accusantium doloremque
+                                laudantium</p>
+                            <a href="about.html" class="button-w3ls active mt-5">Read More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                            <a href="menu.html" class="button-w3ls mt-5 ml-2">Hire Now
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-flex  col-lg-6 callbacks_container">
+                <!-- banner slider -->
+                <div class="csslider infinity" id="slider1">
+                    
+                            <div class="banner-top3"></div>
+                        
+                    
+                    
+                    </div>
+                </div>
+                <!-- //banner slider -->
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <div class="clearfix"></div>
+
+    
+
+    <!-- //Table -->
+    <div class="container my-3 ">
+        <table class="table  table-bordered table-light">
+            <thead>
+            <tr class="table-warning ">
+                <th scope="col-sm-6 col-lg-4" colspan=1 class=" font-weight-bold text-center"><h4> Admit Card </h4></th>
+                <th scope="col-sm-6 col-lg" colspan=1 class="text-center font-weight-bold "><h4>Results</h4></th>
+                <th class = "d-none d-sm-block" scope="col-12 col-lg" colspan=1 class="text-center font-weight-bold"><h4>Latest Jobs</h4></th>
+            </tr>
+            </thead>
+                <tbody>
+
+                    <tr>
+                    <td>
+                    <ul>
+                        {% for admit_card in admit_card %}
+                        <li class ='my-lg-4 mx-lg-4 m-2 link_color'><a class='link_color' href="{{ admit_card.get_absolute_url }}">{{ admit_card.title }}</li></a>{% endfor %}
+                    </ul>
+                    </td>
+                    
+                    
+                    <td>
+                    <ul>
+                        {% for result in result %}<li class ='my-lg-4 mx-lg-4 m-2 link_color'><a href="{{ result.get_absolute_url }}">{{ result.title }}</a></li> {% endfor %}
+                    </ul>
+                    </td>
+                    
+                    
+                    <td class = "d-none d-sm-table-cell">
+                    <ul> 
+                        {% for entery in entery %}<li class ='my-lg-4 mx-lg-4 m-2 link_color'><a href="{{ entery.get_absolute_url }}">{{ entery.title }}</a></li> {% endfor %}  
+                    </ul>
+                    </td>
+                    </tr>
+                    </tbody>
+        </table>
+                    
+                    <table class="table  table-bordered table-light">
+            <thead>
+            <tr class="table-warning ">
+                <th  scope="col-sm-6 col-lg-4" colspan=1 class="d-table-row d-sm-none font-weight-bold  "><h4 class='text-center ml-5'> Latest Jobs </h4></th>
+                </tr>
+            </thead>
+                <tbody>
+
+                    <tr class = "d-table-row d-sm-none">
+                    <td >
+                    <ul> 
+                        {% for entery in entery %}<li class ='my-lg-4 mx-lg-4 m-2 link_color'><a href="{{ entery.get_absolute_url }}">{{ entery.title }}</a></li> {% endfor %}  
+                    </ul>
+                    </td>
+                    </tr>
+
+                </tbody>
+        </table>
+    </div>
+    <!-- Table -->
+
+
+
+    <!-- specials -->
+    <section class="blog_w3ls py-5">
+        <div class="container pb-xl-5 pb-lg-3">
+            <div class="title-section text-center mb-md-5 mb-4">
+                <p class="w3ls-title-sub">Student</p>
+                <h3 class="w3ls-title">Latest  <span>Stories</span></h3>
+            </div>
+            <div class="row">
+                <!-- blog grid -->
+                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5 mb-2">
+                    <div class="card border-0 med-blog">
+                        <div class="card-header p-0">
+                            <a href="menu.html">
+                                <img class="card-img-bottom" src="../../static/job_openings/images/blog2-2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body border border-top-0">
+                            <h5 class="blog-title card-title m-0"><a href="menu.html"> New release for students studying or passed class {{ category.class_category }}</a></h5>
+                            <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- //blog grid -->
+
+               <!-- blog grid -->
+                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5 mb-2">
+                    <div class="card border-0 med-blog">
+                        <div class="card-header p-0">
+                            <a href="menu.html">
+                                <img class="card-img-bottom" src="../../static/job_openings/images/blog2-2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body border border-top-0">
+                            <h5 class="blog-title card-title m-0"><a href="menu.html"> New release for students studying or passed class {{ category.class_category }}</a></h5>
+                            <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- //blog grid -->
+
+               <!-- blog grid -->
+                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5 mb-2">
+                    <div class="card border-0 med-blog">
+                        <div class="card-header p-0">
+                            <a href="menu.html">
+                                <img class="card-img-bottom" src="../../static/job_openings/images/blog2-2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body border border-top-0">
+                            <h5 class="blog-title card-title m-0"><a href="menu.html"> New release for students studying or passed class {{ category.class_category }}</a></h5>
+                            <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- //blog grid -->
+
+               <!-- blog grid -->
+                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5 mb-2">
+                    <div class="card border-0 med-blog">
+                        <div class="card-header p-0">
+                            <a href="menu.html">
+                                <img class="card-img-bottom" src="../../static/job_openings/images/blog2-2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body border border-top-0">
+                            <h5 class="blog-title card-title m-0"><a href="menu.html"> New release for students studying or passed class {{ category.class_category }}</a></h5>
+                            <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- //blog grid -->
+
+               <!-- blog grid -->
+                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5 mb-2">
+                    <div class="card border-0 med-blog">
+                        <div class="card-header p-0">
+                            <a href="menu.html">
+                                <img class="card-img-bottom" src="../../static/job_openings/images/blog2-2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body border border-top-0">
+                            <h5 class="blog-title card-title m-0"><a href="menu.html"> New release for students studying or passed class {{ category.class_category }}</a></h5>
+                            <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- //blog grid -->
+
+               <!-- blog grid -->
+                 <div class="col-lg-4 col-md-6 mt-md-0 mt-5 mb-2">
+                    <div class="card border-0 med-blog">
+                        <div class="card-header p-0">
+                            <a href="menu.html">
+                                <img class="card-img-bottom" src="../../static/job_openings/images/blog2-2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body border border-top-0">
+                            <h5 class="blog-title card-title m-0"><a href="menu.html"> New release for students studying or passed class {{ category.class_category }}</a></h5>
+                            <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <!-- //blog grid -->
+                </div>
+        </div>
+    </section>
+    <!-- //specials -->
+
+
+
+   
+
+    <!-- blog -->
+    <section class="blog_w3ls py-5" id="blog">
+        <div class="container py-xl-5 py-lg-3">
+            <div class="title-section text-center mb-md-5 mb-4">
+                <p class="w3ls-title-sub">Posts</p>
+                <h3 class="w3ls-title mb-3">Our Latest <span>Blog</span></h3>
+                <p class="titile-para-text mx-auto">Inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo.Nemo
+                    enim totam rem aperiam.</p>
+            </div>
+            <div class="row">
+                <!-- blog grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0">
+                        <div class="card-header p-0">
+                            <a href="single.html">
+                                <img src="../../static/job_openings/images/blog1.png" class="card-img-bottom img-fluid" alt="image">
+                            </a>
+                            <img src="../../static/job_openings/images/te1.jpg" alt="" class="img-blog rounded-circle img-fluid">
+                        </div>
+                        <div class="card-body text-center pt-5 mt-2">
+                            <h5 class="blog-title card-title mb-2"><a href="single.html">Nandan Kumar</a></h5>
+                            <div class="blog_w3icon border-top border-bottom py-1 mb-3">
+                                <span>
+                                    Magna Kictum - Nov 12</span>
+                            </div>
+                            <p>Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="single.html" class="button-w3ls mt-4">Read More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+                <!-- blog grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0">
+                        <div class="card-header p-0">
+                            <a href="single.html">
+                                <img src="../../static/job_openings/images/blog2.png" class="card-img-bottom img-fluid" alt="image">
+                            </a>
+                            <img src="../../static/job_openings/images/te2.jpg" alt="" class="img-blog rounded-circle img-fluid">
+                        </div>
+                        <div class="card-body text-center pt-5 mt-2">
+                            <h5 class="blog-title card-title mb-2"><a href="single.html">Dev Raj Singh</a></h5>
+                            <div class="blog_w3icon border-top border-bottom py-1 mb-3">
+                                <span>
+                                    Auris Jlan - Nov 15</span>
+                            </div>
+                            <p>Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="single.html" class="button-w3ls active mt-4">Read More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+                <!-- blog grid -->
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                    <div class="card border-0">
+                        <div class="card-header p-0">
+                            <a href="single.html">
+                                <img src="../../static/job_openings/images/blog3.png" class="card-img-bottom img-fluid" alt="image">
+                            </a>
+                            <img src="../../static/job_openings/images/te3.jpg" alt="" class="img-blog rounded-circle img-fluid">
+                        </div>
+                        <div class="card-body text-center pt-5 mt-2">
+                            <h5 class="blog-title card-title mb-2"><a href="single.html">Natus error sit</a></h5>
+                            <div class="blog_w3icon border-top border-bottom py-1 mb-3">
+                                <span>
+                                    Dictum Orta - Nov 20</span>
+                            </div>
+                            <p>Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                            <a href="single.html" class="button-w3ls mt-4">Read More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+            </div>
+        </div>
+    </section>
+    <!-- //blog -->
+
+
+    
+
+    <!-- newsletter -->
+    <section class="subscribe-main py-5">
+        <div class="container py-xl-5 py-3">
+            <div class="row pb-lg-4 pt-lg-5">
+                <div class="col-lg-6 col-md-9 text-center">
+                    <h3 class="w3ls-title mb-2">Subscribe to Newsletter</h3>
+                    <p class="mb-xl-5 mb-4">Free Delivery on your first Hire!</p>
+                    <form action="#" method="post" class="d-flex newsletter-info">
+                        {% csrf_token %}
+                        <input type="email" name="subscribe" placeholder="Enter your Email..." required="">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-3">
+
+                </div>
+            </div>
+            <img src="../../static/job_openings/images/sub.png" alt="" class="img-fluid sub-img">
+        </div>
+    </section>
+    <!-- //newsletter -->
+
+
+
+
+<script src="../static/job_openings/javascript/main.js"></script>
+{% endblock %}
