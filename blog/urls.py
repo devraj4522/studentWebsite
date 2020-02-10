@@ -3,8 +3,8 @@ from . import views
 
 app_name = 'blog'
 
-# urlpatterns = [
-#     job_openings views
-#     path('', views.PostView, name='post_view')
-# ]
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('<slug:slug>/', views.post, name='post')
+]
 

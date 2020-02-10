@@ -7,5 +7,5 @@ urlpatterns = [
     path('admit-card/', views.admit_card, name="Admit_card"),
     path('latest-job/', views.latest_job, name="Latest_job"),
     path('result/', views.result, name="Result"),
-    path('<slug:slug>/', views.post_view, name="postView"),
+    path('jobs/<slug:slug>/', views.post_view, name="postView"),
 ]
