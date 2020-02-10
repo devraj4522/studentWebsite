@@ -141,10 +141,10 @@
 
 								<div class="row">
 									<ul class="list-unstyled ">
-										{% for post in post %}
+										{% for post in post|slice:'10' %}
 										<li class="border-bottom mb-3 pb-3">
 											<span class="fa fa-angle-right"></span>
-											<a href="/jobs/{{ post.get_absolute_url}}" class="text-blog-single">Admit Card 2020</a>
+											<a href="{{ post.get_absolute_url}}" class="text-blog-single">{{ post.title }}</a>
 										</li>
 										{% endfor %}
 										

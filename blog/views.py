@@ -8,6 +8,7 @@ def index(request):
     return render(request, 'blog/index.html', context)
 
 def post(request,slug):
+    posts = Post.published.all()
     post = get_object_or_404(Post, slug=slug)
-    context = {'post': post}
+    context = {'post': post, 'posts': posts}
     return render(request, 'blog/post.html', context)
