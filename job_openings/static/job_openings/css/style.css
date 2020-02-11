@@ -575,7 +575,7 @@ a.button-w3ls:hover {
 }
 
 .banner-top3 {
-    background: url(../images/3.png) no-repeat bottom;
+    background: url(../images/3.svg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -924,7 +924,7 @@ button.submit-contact:hover {
 /* inner pages */
 
 .header-boarder{
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,.25);
+    background: #62969e;
 }
 /* page details */
 .breadcrumb-agile {
@@ -1653,9 +1653,7 @@ link_color a {
 
   
   /* visited link */
-  a:visited {
-    color: #ff3f34;
-  }
+
   
   /* mouse over link */
   a:hover {
