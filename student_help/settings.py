@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '54rnamdr@x$uh-w+9h(u#q=8tg@(ghp97z3o4p92g6oeuou6t%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['theyuva.herokuapp.com']
 
@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'student_help.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'post',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        "HOST": 'localhost'
+        'NAME': 'd67doma2nf5l8',
+        'USER': 'aaqkukqgtadhnz',
+        'PASSWORD': 'aaqkukqgtadhnz',
+        "HOST": 'ec2-18-213-176-229.compute-1.amazonaws.com'
     }
 }
 
