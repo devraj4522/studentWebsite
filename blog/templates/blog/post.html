@@ -63,8 +63,12 @@
         <div class ='mb-2 mb-md-3'>
         <p class="blog-post-meta">{{ post.publish }} by <a href="#">{{ post.author }}</a></p>
         </div>
-        {{ post.body|markdown|linebreaksbr }}
-         </div><!-- /.blog-post -->
+          <div class="text-center row my-3 my-md-4">
+              <img src="/media/{{ post.image }}" class="rounded" alt="dev">
+          </div>
+        {{ post.body|markdown }}
+         </div>
+        <!-- /.blog-post -->
 
       <div class="blog-post">
        </div><!-- /.blog-post -->
