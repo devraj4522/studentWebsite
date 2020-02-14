@@ -18,10 +18,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
-
+from job_openings.sitemaps import PostSitemap
 
 sitemaps = {
-    'posts': PostSitemap,
+    'post': PostSitemap,
             }
 
 urlpatterns = [
@@ -29,7 +29,8 @@ urlpatterns = [
     path('', include('job_openings.urls', namespace='job')),
     path('blog/', include('blog.urls', namespace='blog')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
-         name='django.contrib.sitemaps.views.sitemap')
+         name='django.contrib.sitemaps.views.sitemap'),
+
 ]
 
 if settings.DEBUG:
