@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '54rnamdr@x$uh-w+9h(u#q=8tg@(ghp97z3o4p92g6oeuou6t%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['theyuva.herokuapp.com']
+ALLOWED_HOSTS = ["theyuva.herokuapp.com"]
 
 
 # Application definition
@@ -121,11 +121,14 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'
+
 # Media Files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+
 #  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

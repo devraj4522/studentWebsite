@@ -102,7 +102,7 @@
 							{% for comment in comment %}
 							<div class="media mt-3">
 								<a class="d-flex pr-3" href="#">
-									<img src="../../static/job_openings/images/c2.png" alt="" class="img-fluid" />
+									<img src="../../../static/job_openings/images/c2.png" alt="" class="img-fluid" />
 								</a>
 								<div class="media-body">
 									<h5 class="mt-0">{{ comment.name }}</h5>
@@ -159,7 +159,7 @@
 									<ul class="list-unstyled ">
 										{% for post in all_post|slice:'10'%}
 										<li class="border-bottom mb-3 pb-3">
-											<img src="../../static/job_openings/images/newicon.gif" alt="" class="img-fluid" />
+											<img src="../../../static/job_openings/images/newicon.gif" alt="" class="img-fluid" />
 											<a href="{{ post.get_absolute_url }}" class="text-blog-single">{{ post.title }}</a>
 										</li>
 										{% endfor %}
