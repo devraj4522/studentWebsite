@@ -1,0 +1,137 @@
+{% extends "job_openings/basics.html" %}
+{% block body %}
+{% load blog_tags %}
+<div class="baneer-w3ls">
+		<div class="row no-gutters">
+			<div class="col-xl-5 col-lg-6 ">
+				<div class="banner-left-w3">
+					<div class="container">
+						<div class="banner-info_agile_w3ls ">
+							<h5>Dedicated to Yuth </h5>
+							<h3 class="text-da mb-4"><span>The </span> Youth <p class="font-weight-bold"><h3>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Time is now.", "Every form at one place.", " I am Yuva.", " Future is Yuva." ]'>
+
+  </a>
+                            </h3>
+                            </h3>
+                            </p>
+                            <p>With the vision to bring a hand toward millions of job aspirants, students and live their dream
+                            yuva comes forward to energise them and provide digital resources. </p>
+                            <a href="/blog" class="button-w3ls active mt-5">Read More
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                            <a href="/latest-job" class="button-w3ls mt-5 ml-2">Apply Now
+                                <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-flex  col-lg-6 callbacks_container">
+                <!-- banner slider -->
+                <div class="csslider infinity" id="slider1">
+
+                            <div class="banner-top3"></div>
+
+
+
+                    </div>
+                </div>
+                <!-- //banner slider -->
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+
+<!-- //Contents -->
+
+<div class="title-section text-center mb-md-5 mb-4">
+				<h3 class="w3ls-title mb-3">The<span>Youth</span></h3>
+				<p class="titile-para-text mx-auto">{{ post.title }}</p>
+			</div>
+
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main mb-md-4 mb-2">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        From the Youth
+      </h3>
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">{{ post.heading }}</h2>
+        <div class ='mb-2 mb-md-3'>
+        <p class="blog-post-meta">{{ post.publish }} by <a href="#">{{ post.author }}</a></p>
+        </div>
+          <div class="text-center row my-3 my-md-4">
+              <img src="/media/{{ post.image }}" class="rounded" alt="dev">
+          </div>
+        {{ post.body|markdown }}
+         </div>
+        <!-- /.blog-post -->
+
+      <div class="blog-post">
+       </div><!-- /.blog-post -->
+
+
+
+ </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">We love it <em>because finally we can </em> share all our experiences of competative</span></h3>
+				<em> world and strengthen the youth with new kind of understanding.
+
+You will love it with some of the most valuable & actionable content on this niche.
+
+That assurance Yuva can give!</em>
+      </div>
+
+      <div class="p-4">
+        <div class="right-blog-info">
+							<div class="category-story tech-btm p-5">
+								<div class="row pb-2 mx-auto">
+								<h4><strong>More Stories</strong></h4>
+								</div>
+
+								<div class="row">
+									<ul class="list-unstyled ">
+										{% for post in posts|slice:'6' %}
+										<li class="border-bottom mb-3 pb-3">
+
+											<a href="{{ post.get_absolute_url }}" class="text-blog-single">{{ post.title}}</a>
+										</li>
+										{% endfor %}
+
+
+
+
+									</ul>
+								</div>
+							</div>
+							News Letter
+							</div>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="https://twitter.com/Devraj40845333">Twitter</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ol>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main>
+<!-- //Contents -->
+
+</div>
+
+
+
+
+{% endblock %}

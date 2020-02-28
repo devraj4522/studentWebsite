@@ -1,0 +1,39 @@
+{% extends "job_openings/basics.html" %}
+{% block body %}
+
+    
+	<!-- page details -->
+	<div class="breadcrumb-agile bg-light py-2">
+		<ol class="breadcrumb bg-light m-0">
+			<li class="breadcrumb-item">
+				<a href="/">Home</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">Latest job </li>
+		</ol>
+	</div>
+	<!-- //page details -->
+
+	
+	<!-- Table -->
+<div class="container my-3 ">
+        <table class="table  table-bordered table-light">
+            <thead>
+            <tr class="table-warning ">
+                <th scope="col-sm-6 col-lg-4" colspan=1 class=" font-weight-bold text-center"><h3 class="w3ls-title text-center">Latest  <span>Jobs</span></h3></th>
+            </tr>
+            </thead>
+                <tbody>
+
+                    <tr>
+                    <td>
+                    <ul>
+                        {% for latest_job in latest_job %}
+                        <li class ='my-lg-4 mx-lg-4 m-2 link_color'><a class='link_color' href="{{ latest_job.get_absolute_url }}">{{latest_job.title }}</li></a>{% endfor %}
+                    </ul>
+                    </td>
+					</tr>
+                    </tbody>
+        </table>
+	</div>
+<!-- Table -->
+{% endblock %}
