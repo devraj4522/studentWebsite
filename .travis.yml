@@ -5,3 +5,9 @@ install:
   - pip install -r requirements.txt
 script:
   - python manage.py test
+deploy:
+  provider: heroku
+  api_key:     postgres://bvxnshpkwulxlo:5b62fb220c6e7818d61de985af12b1ac707810a713c3f89e107dfd78b6257299@ec2-52-202-185-87.compute-1.amazonaws.com:5432/ddkeklegi8clm
+  app: APP
+  run: python manage.py migrate
+  on: master
