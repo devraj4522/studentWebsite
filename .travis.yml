@@ -8,6 +8,6 @@ script:
 deploy:
   provider: heroku
   api_key: 8626f6d1-9d91-4a68-be0e-c1b4b1700f1a
-  app: APP
+  app: theyuva
   run: python manage.py migrate
   on: master
